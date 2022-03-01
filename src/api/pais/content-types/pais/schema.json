@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paises",
+  "info": {
+    "singularName": "pais",
+    "pluralName": "paises",
+    "displayName": "pais",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

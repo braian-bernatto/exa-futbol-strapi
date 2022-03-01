@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "equipos",
+  "info": {
+    "singularName": "equipo",
+    "pluralName": "equipos",
+    "displayName": "equipo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

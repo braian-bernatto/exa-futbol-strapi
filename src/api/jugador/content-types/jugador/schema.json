@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jugadors",
+  "info": {
+    "singularName": "jugador",
+    "pluralName": "jugadors",
+    "displayName": "jugador",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "velocidad": {
+      "type": "integer"
+    },
+    "tiro": {
+      "type": "integer"
+    },
+    "regate": {
+      "type": "integer"
+    },
+    "defensa": {
+      "type": "integer"
+    },
+    "pase": {
+      "type": "integer"
+    },
+    "fisico": {
+      "type": "integer"
+    },
+    "pais": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pais.pais"
+    },
+    "posicion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::posicion.posicion"
+    },
+    "equipo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::equipo.equipo"
+    },
+    "suplente": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

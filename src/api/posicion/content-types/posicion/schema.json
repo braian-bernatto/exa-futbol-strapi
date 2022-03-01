@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posiciones",
+  "info": {
+    "singularName": "posicion",
+    "pluralName": "posiciones",
+    "displayName": "posicion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "abreviaturaEsp": {
+      "type": "string"
+    },
+    "abreviaturaEng": {
+      "type": "string"
+    }
+  }
+}
