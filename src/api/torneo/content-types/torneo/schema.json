@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "torneos",
+  "info": {
+    "singularName": "torneo",
+    "pluralName": "torneos",
+    "displayName": "torneo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fechaInicio": {
+      "type": "date",
+      "required": true
+    },
+    "activo": {
+      "type": "boolean",
+      "default": true,
+      "required": false
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "fechaFin": {
+      "type": "date"
+    },
+    "equipos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::equipo.equipo",
+      "inversedBy": "torneos"
+    }
+  }
+}

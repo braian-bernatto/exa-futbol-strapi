@@ -16,6 +16,18 @@
     },
     "url": {
       "type": "string"
+    },
+    "torneos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::torneo.torneo",
+      "inversedBy": "equipos"
+    },
+    "clasificacion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::clasificacion.clasificacion",
+      "mappedBy": "equipo"
     }
   }
 }

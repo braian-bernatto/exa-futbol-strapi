@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clasificaciones",
+  "info": {
+    "singularName": "clasificacion",
+    "pluralName": "clasificaciones",
+    "displayName": "clasificacion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "equipo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::equipo.equipo",
+      "inversedBy": "clasificacion"
+    },
+    "partidosJugados": {
+      "type": "integer"
+    },
+    "partidosGanados": {
+      "type": "integer"
+    },
+    "partidosPerdidos": {
+      "type": "integer"
+    },
+    "partidosEmpatados": {
+      "type": "integer"
+    },
+    "golesFavor": {
+      "type": "integer"
+    },
+    "golesContra": {
+      "type": "integer"
+    },
+    "torneo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::torneo.torneo"
+    }
+  }
+}
